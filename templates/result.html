@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdeaValidator AI - Report</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 Startup Analysis Report</h1>
+
+    <br>
+
+    <h2>Your Startup Idea</h2>
+
+    <p>{{ idea }}</p>
+
+    <br><br>
+
+    <h2>AI Business Analysis</h2>
+
+    <div style="text-align:left; white-space:pre-wrap; line-height:1.8;">
+        {{ report }}
+    </div>
+
+    <br><br>
+
+    <a href="/">
+        <button>
+            Analyze Another Idea
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>
